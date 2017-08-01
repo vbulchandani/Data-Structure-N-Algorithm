@@ -23,10 +23,8 @@ public class Solution {
     public void reverseChar(char [] word, int start, int end){
         while(start < end){
             char temp = word[start];
-            word[start] = word[end];
-            word[end] = temp;
-            start++;
-            end--;
+            word[start++] = word[end];
+            word[end--] = temp;
         }
     }
 }
